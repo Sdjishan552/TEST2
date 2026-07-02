@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#08090f" />
-  <meta name="description" content="DocStitcher — Make passport photos, stitch document scans into A4 PDFs, remove backgrounds, compress PDFs. 100% free. Your files never leave your device." />
+  <meta name="description" content="DocStitcher — Make passport photos, stitch document scans into A4 PDFs, remove backgrounds, compress PDFs. 100% free. Every tool processes files locally in your browser by default — background removal has an optional cloud mode you can turn on with your own remove.bg key." />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="DocStitcher" />
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
@@ -629,14 +629,14 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-left">
-        <div class="hero-eyebrow"><div class="ey-dot"></div><span id="lp-hero-eyebrow-text">🇮🇳 Made in India &nbsp;·&nbsp; Your Files Never Leave Your Device</span></div>
+        <div class="hero-eyebrow"><div class="ey-dot"></div><span id="lp-hero-eyebrow-text">🇮🇳 Made in India &nbsp;·&nbsp; Local Processing By Default</span></div>
         <h1 class="hero-h1" id="lp-hero-h1">
           Document PDFs &amp;<br>
           Passport Photos,<br>
           <span class="h1-grad">Done Instantly.</span>
         </h1>
         <p class="hero-sub">
-          <span id="lp-hero-sub">Stitch front &amp; back scans into one clean A4 PDF. Make passport photos. Remove backgrounds. Compress PDFs. Seven tools — all running right inside your browser.</span> <em style="color:var(--text);font-style:normal" id="lp-hero-sub-em">Your files never touch a server.</em>
+          <span id="lp-hero-sub">Stitch front &amp; back scans into one clean A4 PDF. Make passport photos. Remove backgrounds. Compress PDFs. Seven tools — all running right inside your browser.</span> <em style="color:var(--text);font-style:normal" id="lp-hero-sub-em">No server needed for any tool, unless you choose to turn one on.</em>
         </p>
         <div class="hero-actions">
           <button class="btn-primary" onclick="window.location.href='app.html'">
@@ -678,7 +678,7 @@
             </div>
           </div>
           <!-- floating badges -->
-          <div class="da-badge da-badge--1">✅ Zero Server Upload</div>
+          <div class="da-badge da-badge--1">✅ Local By Default</div>
           <div class="da-badge da-badge--2">⚡ Instant, Local</div>
           <div class="da-badge da-badge--3">🔒 100% Private</div>
         </div>
@@ -691,7 +691,7 @@
         <div class="stat"><div class="stat-num">7<em>+</em></div><div class="stat-lbl">Built-in Tools</div></div>
         <div class="stat"><div class="stat-num">100<em>%</em></div><div class="stat-lbl">Local Processing</div></div>
         <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Languages</div></div>
-        <div class="stat"><div class="stat-num">0</div><div class="stat-lbl">Files Sent to Server</div></div>
+        <div class="stat"><div class="stat-num">0</div><div class="stat-lbl">Server Uploads By Default</div></div>
       </div>
     </div>
 
@@ -702,12 +702,13 @@
         <div>
           <div class="honesty-title">Honest about how DocStitcher works</div>
           <div class="honesty-body">
-            <strong>Your documents are 100% private</strong> — every crop, compress, and export runs entirely inside your browser using JavaScript. No file ever touches our servers. Not even for a millisecond. However, DocStitcher <strong>does require an active internet connection</strong> to load (we serve ads to cover hosting and keep the app completely free for you). The AI background remover downloads its model once on first use, and individual tools work locally after that — but the app itself needs connectivity to start.
+            <strong>Every tool processes your files locally, by default.</strong> Stitching, cropping, compressing, and exporting all run inside your browser using JavaScript and Canvas — no file is uploaded anywhere for those. Background removal is local too, using an on-device AI model that downloads once on first use. The one exception: if you <em>choose</em> to switch background removal to the optional remove.bg cloud mode (using your own free remove.bg API key, for higher-quality cutouts), that specific photo is uploaded to remove.bg's servers for processing — nothing else changes, and it's entirely opt-in. DocStitcher also <strong>needs an internet connection to load</strong> in the first place (we serve ads to cover hosting and keep the app free).
           </div>
           <div class="honesty-pills">
-            <span class="h-pill h-pill--yes">✓ Files stay on your device</span>
-            <span class="h-pill h-pill--yes">✓ Zero server file uploads</span>
-            <span class="h-pill h-pill--yes">✓ On-device AI model</span>
+            <span class="h-pill h-pill--yes">✓ Files stay on your device by default</span>
+            <span class="h-pill h-pill--yes">✓ No server uploads unless you opt in</span>
+            <span class="h-pill h-pill--yes">✓ On-device AI model (default)</span>
+            <span class="h-pill h-pill--ad">☁️ Optional: remove.bg cloud mode (your key)</span>
             <span class="h-pill h-pill--ad">📢 Ad-supported · keeps it free</span>
             <span class="h-pill h-pill--no">⚠ Requires internet to load</span>
           </div>
@@ -726,9 +727,9 @@
         </div>
         <div class="hl-card hl-card--secure rv rv2">
           <span class="hl-emoji">🛡️</span>
-          <div class="hl-title">Your Files Are 100% Private</div>
-          <div class="hl-desc">Not a single byte of your Aadhaar, PAN card, or photo is ever sent to any server. Every edit runs inside your browser tab. Close it — nothing is retained.</div>
-          <span class="hl-badge hl-badge--secure">🔒 100% Local Processing</span>
+          <div class="hl-title">Local Processing By Default</div>
+          <div class="hl-desc">Your Aadhaar, PAN card, or photo is processed entirely inside your browser tab by default — close it and nothing is retained. The only exception is if you turn on the optional remove.bg cloud mode for background removal, which uploads that one photo to remove.bg using your own API key.</div>
+          <span class="hl-badge hl-badge--secure">🔒 Local By Default</span>
         </div>
         <div class="hl-card hl-card--speed rv rv3">
           <span class="hl-emoji">⚡</span>
@@ -940,29 +941,29 @@
       <div class="priv-inner">
         <div>
           <div class="sec-eye rv" id="lp-sec-eye-priv">Privacy First</div>
-          <h2 class="sec-h2 rv rv1" id="lp-sec-h2-priv">Your documents never leave your device.</h2>
-          <p class="sec-sub rv rv2" style="margin-bottom:0">DocStitcher processes everything inside your browser using JavaScript and Canvas APIs. No file — not your Aadhaar, PAN card, passport photo, or anything else — is ever sent to any server. The only network traffic is ads (which keep the app free) and the AI model download on first use.</p>
+          <h2 class="sec-h2 rv rv1" id="lp-sec-h2-priv">Your documents stay on your device, by default.</h2>
+          <p class="sec-sub rv rv2" style="margin-bottom:0">DocStitcher processes everything — your Aadhaar, PAN card, passport photo, or anything else — inside your browser using JavaScript and Canvas APIs. No file is sent to any server for that. The network traffic you'll see is ads (which keep the app free), the AI model download on first use, and — only if you turn it on yourself — the optional remove.bg cloud mode for background removal, which uploads just that photo to remove.bg using your own API key.</p>
 
           <div class="priv-points">
             <div class="priv-point rv rv2">
               <div class="priv-icon pi--lock">🔒</div>
               <div class="priv-text">
-                <strong>Zero Server File Uploads</strong>
-                <span>All file processing happens using JavaScript and Canvas APIs, entirely in your tab. No backend, no cloud storage, no S3 bucket ever touches your files.</span>
+                <strong>No Server Uploads By Default</strong>
+                <span>All file processing happens using JavaScript and Canvas APIs, entirely in your tab — no backend, no cloud storage, no S3 bucket involved. The one opt-in exception is the remove.bg cloud mode described below.</span>
               </div>
             </div>
             <div class="priv-point rv rv3">
               <div class="priv-icon pi--ai">🤖</div>
               <div class="priv-text">
-                <strong>On-Device AI Model</strong>
-                <span>The background removal AI downloads once and runs locally in your browser. Your photos are never sent to any AI service or cloud API.</span>
+                <strong>On-Device AI Model (Default)</strong>
+                <span>By default, background removal uses an AI model that downloads once and runs locally in your browser — no photo is sent anywhere for it. If you want higher-quality cutouts, you can opt in to the remove.bg cloud API instead, using your own free remove.bg key; only then is that photo uploaded to remove.bg's servers.</span>
               </div>
             </div>
             <div class="priv-point rv rv4">
               <div class="priv-icon pi--net">📢</div>
               <div class="priv-text">
                 <strong>Why Internet Is Required</strong>
-                <span>The app itself and its ads require a live connection to load — this is how we keep DocStitcher free. Once loaded, all your document work stays 100% local and private.</span>
+                <span>The app itself and its ads require a live connection to load — this is how we keep DocStitcher free. Once loaded, your document work stays local unless you deliberately switch on the optional remove.bg cloud mode.</span>
               </div>
             </div>
           </div>
@@ -1004,14 +1005,14 @@
     <section class="cta-sec">
       <div class="cta-inner rv">
         <h2 class="cta-h2" id="lp-cta-h2">Start making your documents<br>the smart way.</h2>
-        <p class="cta-sub" id="lp-cta-sub">All 7 tools. Instant access. Your files stay on your device — always.</p>
+        <p class="cta-sub" id="lp-cta-sub">All 7 tools. Instant access. Your files stay on your device by default.</p>
         <div style="position:relative;z-index:1">
           <button class="btn-primary" onclick="window.location.href='app.html'" style="margin:0 auto">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
             <span id="lp-cta-btn">Open App — It's Free</span>
           </button>
         </div>
-        <p class="cta-note">No account · No credit card · No file uploads · Works in any modern browser · Ad-supported to stay free</p>
+        <p class="cta-note">No account · No credit card · Local processing by default · Works in any modern browser · Ad-supported to stay free</p>
       </div>
     </section>
 
@@ -1026,7 +1027,7 @@
           </div>
           <span class="logo-name" style="font-size:15px">DocStitcher</span>
         </div>
-        <p class="foot-copy">© 2026 DocStitcher &nbsp;·&nbsp; Built with ❤️ in India &nbsp;·&nbsp; Files processed 100% locally</p>
+        <p class="foot-copy">© 2026 DocStitcher &nbsp;·&nbsp; Built with ❤️ in India &nbsp;·&nbsp; Files processed locally by default</p>
         <div class="foot-links">
           <a href="#features" class="foot-link">Features</a>
           <a href="privacy.html" class="foot-link">Privacy</a>
@@ -1049,7 +1050,7 @@
       '🗜 PDF Compressor', '📚 Bulk PDF Builder', '🛠 Multi-Tool Editor',
       '💧 Text Watermark', '🌐 3 Languages', '📢 Free · Ad-Supported',
       '🔒 Zero File Uploads', '🎯 Keyboard Signature Placement', '300 DPI Print Quality',
-      '🇮🇳 Made in India', '⚡ Instant Processing', '🛡 Your Files Never Leave Your Device',
+      '🇮🇳 Made in India', '⚡ Instant Processing', '🛡 Local Processing By Default',
     ];
     const track = document.getElementById('lpTicker');
     if (track) {
